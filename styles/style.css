@@ -1,3 +1,56 @@
-*{    
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Nunito:wght@400;700&display=swap");
+
+* {
     box-sizing: border-box;
 }
+
+:root {
+    --color-primary: #f3efe0;
+    --color-secondary-light: grey;
+    --color-secondary-dark: black;
+    --color-accent: cyan;
+    --color-text-dark: black;
+    --color-text-light: white;
+
+    --font-primary: 'Handlee', cursive;
+    --font-secondary: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--color-primary);
+    font-family: var(--font-primary);
+}
+
+#home {
+    background-color: var(--color-primary);
+    font-family: var(--font-secondary);
+}
+
+#nav-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 5em;
+}
+
+#nav-primary .nav-logo,
+.nav-links {
+    margin: 0;
+    padding: 0;
+}
+
+
+#nav-primary .nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#nav-primary .nav-links {
+    display: flex;
+    gap: 3em;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#nav-primary .nav-link {}
