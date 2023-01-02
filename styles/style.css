@@ -60,8 +60,7 @@ body {
 #nav-primary .nav-link {}
 
 /* Home hero section */
-.hero {
-    /* border: 2px solid orange;     */
+.hero {    
     margin: 10em 5em;
     font-family: var(--font-secondary);
 }
@@ -75,29 +74,26 @@ body {
 }
 
 .hero-left {
-    /* border: 2px solid red;     */
+    
 }
 
-.hero-left .txt-hero-intro {
-    /* border: 2px solid blue;     */
+.hero-left .txt-hero-intro {    
     font-size: 1.5em;
 }
 
-.hero-left .txt-hero-main-heading {
-    /* border: 2px solid black; */
+.hero-left .txt-hero-main-heading {    
     font-family: var(--font-primary);
     font-size: 8em;
     margin-left: -8px;
     margin-top: 10px;
 }
 
-.hero-left .txt-hero-about {
-    /* border: 2px solid green;     */
+.hero-left .txt-hero-about {    
     font-size: 2.5em;
 }
 
-.hero-btn-group {
-    /* border: 1px solid darkmagenta; */
+/* Hero CTA */
+.hero-btn-group {    
     margin-top: 3em;
 }
 
