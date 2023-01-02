@@ -214,12 +214,10 @@ body {
 
 #projects .logo-codesandbox {}
 
-#wave2 {    
-    /* border: 2px solid rebeccapurple; */
+#wave2 {        
     position: absolute;
     width: 100%;    
-    bottom: -20%;     
-    /* display: none; */
+    bottom: -20%;         
     height: auto;    
 }
 
@@ -230,6 +228,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 110vh;
 }
 
 #tech .heading-secondary{    
@@ -251,15 +250,31 @@ body {
     transform: scale(0.8);
 }
 
+#wave3{
+    position: absolute;
+    width: 100%;    
+    bottom: -20%;         
+    height: auto;        
+}
+
 /* Contact Section */
-#contact{
-    display: none;
+#contact{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-secondary-dark);
+    padding-bottom: 4rem;
 }
 
 #contact .heading-secondary {
-    
+    color: var(--color-primary);
+    margin: 3rem;    
 }
 
-#wave3{
-    display: none;
+#contact .contact-logos{
+    margin-top: 0rem;
+}
+
+#contact .contact-logo{
+    transform: scale(0.8);
 }
