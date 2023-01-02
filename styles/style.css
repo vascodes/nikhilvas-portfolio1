@@ -3,6 +3,8 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 :root {
@@ -20,13 +22,14 @@
 
 body {
     background-color: var(--color-primary);
-    font-family: var(--font-primary);    
+    font-family: var(--font-primary);
 }
 
 /* Home Section */
 #home {
+    height: 100vh;
     background-color: var(--color-primary);
-    font-family: var(--font-secondary);        
+    font-family: var(--font-secondary);
 }
 
 /* Navbar */
@@ -57,14 +60,10 @@ body {
 }
 
 /* Home hero section */
-.hero {    
+.hero {
     margin: 5rem 8rem;
-    font-family: var(--font-secondary);         
-    position: relative; 
-}
-
-.hero-left{   
-    /* border: 1px solid green;  */    
+    font-family: var(--font-secondary);
+    position: relative;
 }
 
 /* Hero left section */
@@ -73,7 +72,7 @@ body {
 .txt-hero-about,
 .hero-btn-group {
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 .hero-left .txt-hero-intro {
@@ -83,11 +82,11 @@ body {
 .hero-left .txt-hero-main-heading {
     font-family: var(--font-primary);
     font-size: 6rem;
-    margin-left: -8px;    
+    margin-left: -8px;
 }
 
 .hero-left .txt-hero-about {
-    font-size: 2rem;    
+    font-size: 2rem;
     margin-top: -10px;
 }
 
@@ -98,7 +97,7 @@ body {
 
 .hero-left #btn-see-my-work,
 #btn-contact-me {
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
     width: 10rem;
     height: 3rem;
     border: 2px solid black;
@@ -134,15 +133,81 @@ body {
 }
 
 /* Hero right section */
-.hero-right{
-    /* border: solid 1px red; */    
+.hero-right {
     position: absolute;
     top: -5%;
     right: -2%;
     width: 65%;
 }
 
-.hero-right #illustration-person-coding{
+.hero-right #illustration-person-coding {
     width: 100%;
-    height: auto;    
+    height: auto;
 }
+
+/* Projects Section */
+#projects {
+    background-color: var(--color-secondary-light);
+    position: relative;
+    /* margin-top: 8rem; */
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-bottom: 4rem;
+    /* margin-top: 8rem;         */
+}
+
+#wave1 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: -40vh;
+}
+
+#projects .heading-secondary {
+    color: var(--color-primary);
+    font-size: 3rem;
+    margin-top: 2rem;
+    z-index: 100;
+}
+
+#projects .project-grid {    
+    /* TODO: Change to css grid */
+    padding: 4rem;
+    width: 80%;
+    display: flex;
+    gap: 2rem;    
+}
+
+#projects .project-card{    
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    width: 25vw;
+    height: 25vh;    
+    justify-content: space-around;
+}
+
+#projects .project-icons {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#projects .logo-codepen,
+.logo-github,
+.logo-codesandbox {    
+    transform: scale(0.6);
+}
+
+#projects .logo-codepen {}
+
+#projects .logo-github {}
+
+#projects .logo-codesandbox {}
