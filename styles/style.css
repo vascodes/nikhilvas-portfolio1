@@ -7,39 +7,42 @@
 
 :root {
     --color-primary: #f3efe0;
-    --color-secondary-light: grey;
-    --color-secondary-dark: black;
-    --color-accent: cyan;
+    --color-secondary-light: #434242;
+    --color-secondary-dark: #222222;
+    --color-accent: #22A39F;
+    --color-text-white: white;
     --color-text-dark: black;
-    --color-text-light: white;
+    --color-text-light: #f3efe0;
 
-    --font-primary: 'Handlee', cursive;
-    --font-secondary: 'Nunito', sans-serif;
+    --font-primary: "Handlee", cursive;
+    --font-secondary: "Nunito", sans-serif;
 }
 
 body {
     background-color: var(--color-primary);
     font-family: var(--font-primary);
+    line-height: 1;
 }
 
+/* Home Section */
 #home {
     background-color: var(--color-primary);
     font-family: var(--font-secondary);
 }
 
-#nav-primary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5em 5em;
-}
-
+/* Navbar */
 #nav-primary .nav-logo,
 .nav-links {
     margin: 0;
     padding: 0;
 }
 
+#nav-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5em 5em;
+}
 
 #nav-primary .nav-logo {
     font-size: 1.5em;
@@ -47,6 +50,7 @@ body {
 }
 
 #nav-primary .nav-links {
+    font-size: 1.1em;
     display: flex;
     gap: 3em;
     list-style-type: none;
@@ -54,3 +58,83 @@ body {
 }
 
 #nav-primary .nav-link {}
+
+/* Home hero section */
+.hero {
+    /* border: 2px solid orange;     */
+    margin: 10em 5em;
+    font-family: var(--font-secondary);
+}
+
+.hero-left .txt-hero-intro,
+.txt-hero-main-heading,
+.txt-hero-about,
+.hero-btn-group {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-left {
+    /* border: 2px solid red;     */
+}
+
+.hero-left .txt-hero-intro {
+    /* border: 2px solid blue;     */
+    font-size: 1.5em;
+}
+
+.hero-left .txt-hero-main-heading {
+    /* border: 2px solid black; */
+    font-family: var(--font-primary);
+    font-size: 8em;
+    margin-left: -8px;
+    margin-top: 10px;
+}
+
+.hero-left .txt-hero-about {
+    /* border: 2px solid green;     */
+    font-size: 2.5em;
+}
+
+.hero-btn-group {
+    /* border: 1px solid darkmagenta; */
+    margin-top: 3em;
+}
+
+.hero-left #btn-see-my-work,
+#btn-contact-me {
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+    width: 10em;
+    height: 3em;
+    border: 2px solid black;
+    border-radius: 0;
+    box-shadow: 4px 4px 4px 0px rgb(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+@keyframes btn-hover-animation {  
+    100% {
+        transform: translate(0, -5px) scale(1.05);        
+        color: var(--color-text-white);
+        background-color: var(--color-accent);
+    }
+}
+
+.hero-left #btn-see-my-work:hover {    
+    animation: btn-hover-animation 0.5s ease forwards;
+}
+
+.hero-left #btn-contact-me:hover {        
+    animation: btn-hover-animation 0.5s ease forwards;
+}
+
+.hero-left #btn-see-my-work {
+    color: var(--color-text-white);
+    background-color: var(--color-secondary-dark);
+}
+
+.hero-left #btn-contact-me {
+    margin-left: 1.5em;
+    background-color: var(--color-primary);
+}
