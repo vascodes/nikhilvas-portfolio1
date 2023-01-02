@@ -20,14 +20,13 @@
 
 body {
     background-color: var(--color-primary);
-    font-family: var(--font-primary);
-    line-height: 1;
+    font-family: var(--font-primary);    
 }
 
 /* Home Section */
 #home {
     background-color: var(--color-primary);
-    font-family: var(--font-secondary);
+    font-family: var(--font-secondary);        
 }
 
 /* Navbar */
@@ -40,88 +39,87 @@ body {
 #nav-primary {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 1.5em 5em;
+    align-itrems: center;
+    margin: 1.5rem 8rem;
 }
 
 #nav-primary .nav-logo {
-    font-size: 1.5em;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 #nav-primary .nav-links {
-    font-size: 1.1em;
+    font-size: 1.2rem;
     display: flex;
-    gap: 3em;
+    gap: 3rem;
     list-style-type: none;
     text-decoration: none;
 }
 
-#nav-primary .nav-link {}
-
 /* Home hero section */
 .hero {    
-    margin: 10em 5em;
-    font-family: var(--font-secondary);
+    margin: 5rem 8rem;
+    font-family: var(--font-secondary);         
+    position: relative; 
 }
 
+.hero-left{   
+    /* border: 1px solid green;  */    
+}
+
+/* Hero left section */
 .hero-left .txt-hero-intro,
 .txt-hero-main-heading,
 .txt-hero-about,
 .hero-btn-group {
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
-.hero-left {
-    
+.hero-left .txt-hero-intro {
+    font-size: 1.5rem;
 }
 
-.hero-left .txt-hero-intro {    
-    font-size: 1.5em;
-}
-
-.hero-left .txt-hero-main-heading {    
+.hero-left .txt-hero-main-heading {
     font-family: var(--font-primary);
-    font-size: 8em;
-    margin-left: -8px;
-    margin-top: 10px;
+    font-size: 6rem;
+    margin-left: -8px;    
 }
 
-.hero-left .txt-hero-about {    
-    font-size: 2.5em;
+.hero-left .txt-hero-about {
+    font-size: 2rem;    
+    margin-top: -10px;
 }
 
 /* Hero CTA */
-.hero-btn-group {    
-    margin-top: 3em;
+.hero-btn-group {
+    margin-top: 2rem;
 }
 
 .hero-left #btn-see-my-work,
 #btn-contact-me {
-    font-size: 1.2em;
-    letter-spacing: 0.5px;
-    width: 10em;
-    height: 3em;
+    font-size: 1.2rem;    
+    width: 10rem;
+    height: 3rem;
     border: 2px solid black;
     border-radius: 0;
     box-shadow: 4px 4px 4px 0px rgb(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
-@keyframes btn-hover-animation {  
+@keyframes btn-hover-animation {
     100% {
-        transform: translate(0, -5px) scale(1.05);        
+        transform: translate(0, -5px) scale(1.05);
         color: var(--color-text-white);
         background-color: var(--color-accent);
     }
 }
 
-.hero-left #btn-see-my-work:hover {    
+.hero-left #btn-see-my-work:hover {
     animation: btn-hover-animation 0.5s ease forwards;
 }
 
-.hero-left #btn-contact-me:hover {        
+.hero-left #btn-contact-me:hover {
     animation: btn-hover-animation 0.5s ease forwards;
 }
 
@@ -131,6 +129,20 @@ body {
 }
 
 .hero-left #btn-contact-me {
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
     background-color: var(--color-primary);
+}
+
+/* Hero right section */
+.hero-right{
+    /* border: solid 1px red; */    
+    position: absolute;
+    top: -5%;
+    right: -2%;
+    width: 65%;
+}
+
+.hero-right #illustration-person-coding{
+    width: 100%;
+    height: auto;    
 }
